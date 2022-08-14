@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ### Deployed With Vercel ###
 GitHub URL: https://github.com/yichulau/angular-play
-Website URL:
+Website URL: https://angular-assignemnt.vercel.app/summary
 
 ## API ##
 - https://disease.sh/docs/#/
