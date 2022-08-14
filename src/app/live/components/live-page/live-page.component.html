@@ -1,0 +1,102 @@
+<div class="row mt-4">
+    <div class="col-lg-12">
+      <div class="card z-index-2 bg-gradient-primary shadow border-radius-md borderless">
+        <div class="card-header pb-0">
+          <h6>Total SouthEast Asia Covid-19 Cases Comparison</h6>
+          <p class="text-sm">
+          
+            <span class="font-weight-bold">Total Cumulative Data </span>
+            <i class="fa fa-arrow-up text-success"></i>
+          </p>
+        </div>
+        <div class="card-body p-3">
+          <div class="chart">
+            <canvas baseChart
+                [datasets]="polarChartData"
+                [labels]="polarChartLabels"
+                [options]="polarChartOptions"
+                [legend]="polarChartLegend"
+                [chartType]="polarChartType">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row mt-4">
+    <div class="col-lg-6 mb-lg-0 mb-4">
+      <div class="card z-index-2 bg-gradient-primary shadow border-radius-md borderless margin-botter">
+        <div class="card-header pb-0">
+          <h6>Total Malaysia Dead Cases</h6>
+          <p class="text-sm">
+           
+            <span class="font-weight-bold">Data Pulled From the Past 15 Days </span>
+            <i class="fa fa-arrow-up text-success"></i>
+          </p>
+        </div>
+        <div class="card-body p-3">
+          <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
+            <div class="chart">
+                <canvas baseChart
+                    [datasets]="lineDeadChartData"
+                    [labels]="lineDeadChartLabels"
+                    [options]="lineDeadChartOptions"
+                    [legend]="lineDeadChartLegend"
+                    [chartType]="lineDeadChartType">
+                </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card z-index-2 bg-gradient-primary shadow border-radius-md borderless margin-botter">
+        <div class="card-header pb-0">
+          <h6>Total Malaysia Covid-19 Cases</h6>
+          <p class="text-sm">
+          
+            <span class="font-weight-bold">Data Pulled From the Past 15 Days </span>
+            <i class="fa fa-arrow-up text-success"></i>
+          </p>
+        </div>
+        <div class="card-body p-3">
+          <div class="chart">
+            <canvas baseChart
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4 " style="margin-bottom: 5rem">
+    <div class="col-lg-12">
+      <div class="card z-index-2 bg-gradient-primary shadow border-radius-md borderless">
+        <div class="card-header pb-0">
+          <h6>Total SouthEast Asia Covid-19 Cases Comparison in Bar Chart</h6>
+          <p class="text-sm">
+          
+            <span class="font-weight-bold">Total Cumulative Data </span>
+            <i class="fa fa-arrow-up text-success"></i>
+          </p>
+        </div>
+        <div class="card-body p-3">
+          <div class="chart">
+            <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

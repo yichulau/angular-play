@@ -1,0 +1,37 @@
+.icon-shape {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    border-radius: 0.75rem;
+  }
+  
+.icon-shape i {
+    opacity: 0.8;
+    top: 11px;
+    position: relative;
+}
+
+.borderless{
+    border: 0px;
+    border-radius: 0.75rem;
+}
+
+.stats-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-m-btm{
+    margin-bottom: 20px;
+}
+
+.i-color{
+    color: white;
+}
+.background-gradient{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border-radius: 0.75rem;
+}

@@ -1,0 +1,31 @@
+<div class="margin-topper"></div>
+<div class="margin-topper"></div>
+<app-summary-card [data]="apiData"></app-summary-card>
+<div class="margin-topper"></div>
+<div class="margin-topper"></div>
+<div class="row">
+    <div class="col-sm-12 card-m-btm">
+        <div class="card bg-gradient-primary shadow border-radius-md borderless">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <highcharts-chart
+                        id="container"
+                        [Highcharts]="Highcharts"
+                        [constructorType]="chartConstructor"
+                        [options]="chartOptions"
+                        style="width: 100%; display: block;"
+                        >
+                
+                        </highcharts-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin-topper"></div>
+
+
+<app-summary-chart [data]="apiData"></app-summary-chart>
+<div style="margin-bottom:5rem;"></div>

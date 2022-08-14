@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'covid-app';
+  screenWidth : number;
+  isMobileScreen: boolean;
+  isDesktopScreen : boolean;
+
+  @HostListener('window:resize',['$event'])
+  getScreenSize(event: Event){
+    this.screenWidth = window.innerWidth;
+    this.isMobileScreen = this.screenWidth < 1200 ? true : false;
+    this.isDesktopScreen = this.screenWidth >= 1200 ? true : false;
+  }
+
+
 }

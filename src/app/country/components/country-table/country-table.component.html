@@ -1,0 +1,66 @@
+<div *ngIf="data" class="container-fluid py-4" style="padding-left: 0px; padding-right: 0px; margin-bottom: 5rem;">
+    <div class="row">
+      <div class="col-12">
+        <div class="card mb-4 bg-gradient-primary shadow border-radius-md scrollable ">
+          <div class="card-header pb-0">
+            <h6>Covid-19 Countries and Statistics</h6>
+          </div>
+          <div class="card-body px-3 pt-0 pb-2">
+            <div class="table-responsive p-0">
+              <table class="table align-items-center mb-0">
+                <thead>
+                  <tr>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Countries</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Active Cases</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Recovered</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deaths</th>
+                    <th class="text-secondary opacity-7">Population</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let country of countryApiData ">
+                    <td>
+                      <div class="d-flex px-2 py-1">
+                        <div>
+                          <img src="{{country.countryInfo.flag}}" class="avatar avatar-sm me-3" alt="user1">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h6 class="mb-0 text-sm">{{country.country}}</h6>
+                          <p class="text-xs text-secondary mb-0">{{country.continent}}</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td  class="align-middle text-left text-sm">
+                      <p class="text-xs text-secondary mb-0">{{country.active}}</p>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                        <p class="text-xs text-secondary mb-0">{{country.recovered}}</p>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">{{country.deaths}}</span>
+                    </td>
+                    <td class="align-middle">
+                    <span class="text-secondary text-xs font-weight-bold"> {{country.population}}</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!data" class="row">
+    <div class="col-md-12">
+      <div class="card mb-4 ">
+      
+        <div class="card-body px-3 pt-0 pb-2 postioning text-center">
+          <img src="../../../../assets/img/orange-spinner.svg"/><br/>
+          <div class="text-center">Loading.....</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
